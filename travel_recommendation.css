@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    height:100vh;
+    width:100vh;
+    overflow: hidden;
+    background-image: linear-gradient(to right, rgb(0,0,0,0.7), rgb(0,0,0,0)), url("./images/nyc.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top:0;
+    left:0;
+    padding:1rem 2rem;
+    position: fixed;
+    width:100%;
+    background-color: rgba(26, 27, 27, 0.8);
+}
+
+#webLogo {
+    filter: invert(1);
+}
+
+#navbar a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#navbar a:hover {
+    background-color: #3d4d4f; /* Color más oscuro al pasar el mouse */
+    border-radius: 10px;
+}
+
+#searchdiv{
+    background-color: white;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    margin-right: 3rem;
+
+}
+
+#searchText{
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+#searchText::placeholder{
+    font-style: italic;
+    color: #aaa;
+}
+
+#searchdiv button {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: grey; /* Color de los botones */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#searchdiv button:hover {
+    background-color: #0a4649; /* Color más oscuro al pasar el mouse */
+}
+
+#sidebar{
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    top:50%;
+    gap:1rem;
+    justify-content: center;
+}
+
+#sidebar img{
+    filter: invert(1);
+    height:35px;
+    width:35px;
+
+}
+
+#text-content{
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10rem 0 0 20rem;
+}
+
+
+#title {
+    font-size: 80px;
+    font-weight: bolder;
+    word-wrap: break-word;
+}
+
+#desc {
+    font-size: 25px;
+    font-weight: bold;
+    word-wrap: normal;
+}
+
+#bookBtn {
+    width: 30%;
+    padding: 1rem;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: grey; /* Color de los botones */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#bookBtn:hover {
+    background-color: #0a4649;
+}
