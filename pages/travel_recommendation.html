@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelBloom</title>
-    <script src="travel_recommendation.js"></script>
+    <script defer src="../logic/travel_recommendation.js"></script>
     <link rel="stylesheet" href="../styles/travel_recommendation.css">
 </head>
 <body>
@@ -19,13 +19,14 @@
             <input id="searchText" type="text" placeholder="Enter a destination or keyword">
             <button id="searchBtn">Search</button>
             <button id="resetBtn">Clear</button>
-
         </div>
     </header>
     <div id="text-content">
         <h2 id='title'>EXPLORE<br>DREAM<br>DESTINATION</h2>
         <p id='desc'>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while persuing the desired destination that captivates the hearth and ignites a sense of wonder</p>
         <button id="bookBtn">BOOK NOW</button>
+    </div>
+    <div id="result">
     </div>
     <div id='sidebar'>
         <a href="https://twitter.com" target='_blank'><img src="../images/twitter.png" alt="Twitter link"></a>
