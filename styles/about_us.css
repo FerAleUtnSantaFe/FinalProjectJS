@@ -8,10 +8,10 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
+    color:white;
 }
 
 header{
-    color:white;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -65,11 +65,91 @@ header{
 
 }
 
-#text-content{
-    font-family:'Times New Roman', Times, serif;
-    color: white;
+#container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 10rem 0 0 20rem;
+    position: relative;
+    left:30%;
+    top:15%;
+    width: 120rem; /* Cambiar de fijo a un porcentaje */
+    max-width: 1300px; /* Limitar el ancho máximo */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 0 2rem; /* Reducir padding para pantallas pequeñas */
+    box-sizing: border-box; /* Incluir padding y borde en el ancho total */
+}
+
+
+#info {
+    padding: 3rem 3rem 3rem 0;
+}
+
+#info h2 {
+    font-size: 5.5rem; /* Ajuste relativo para tamaños dinámicos */
+    text-align: left; /* Centrar en pantallas pequeñas */
+}
+
+#info p {
+    font-size: 1rem;
+    line-height: 1.5; /* Mejorar la lectura */
+    text-align: justify; /* Mantener texto legible */
+}
+
+.text-container {
+    background-color: rgba(128,128,128, 0.9);
+    padding: 1rem;
+    width:100%;
+    border-radius: 10px;
+}
+#cards-container {
+    display: flex;
+    flex-direction: row; /* Asegura que los elementos estén en fila */
+    align-items: flex-start; /* Alinea verticalmente al inicio */
+    justify-content: space-between; /* Alinea horizontalmente al inicio */
+    gap: 3rem; /* Espaciado entre elementos */
+    width: 100%; /* Asegura que ocupe el ancho completo del contenedor */
+}
+
+#cards-container h3 {
+    flex: 0 0 auto; /* Evita que el `h3` crezca o se reduzca */
+    margin: 0; /* Elimina márgenes externos */
+    font-size: 3.5rem;
+    text-align: center;
+    align-self: center; /* Centra verticalmente el texto */
+}
+
+#cards-container ul {
+    display: flex;
+    flex-direction: row; /* Asegura que los elementos estén en fila */
+    list-style-type: none;
+    gap: 2rem; /* Espaciado entre los `li` */
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina el padding interno */
+}
+
+#cards-container ul li {
+    text-align: center;
+    flex: 1 1 auto;
+    width: 13rem;
+    max-width: 300px;
+    min-width: 200px;
+    height: 100%;
+}
+
+.card {
+    background-color: rgba(128,128,128, 0.9);
+    padding: 1rem;
+    border-radius: 10px;
+    text-wrap:pretty;
+
+}
+
+.card h6 {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.position{
+    background-color: #0a4649;
+    border-radius: 6px;
+    padding: 1rem;
+    font-weight: bolder;
 }
