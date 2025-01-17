@@ -102,47 +102,49 @@ header{
 }
 #cards-container {
     display: flex;
-    flex-direction: row; /* Asegura que los elementos estén en fila */
-    align-items: flex-start; /* Alinea verticalmente al inicio */
-    justify-content: space-between; /* Alinea horizontalmente al inicio */
-    gap: 3rem; /* Espaciado entre elementos */
-    width: 100%; /* Asegura que ocupe el ancho completo del contenedor */
+    flex-direction: row; 
+    align-items: flex-start;
+    justify-content: space-between; 
+    gap: 3rem; 
+    width: 100%; 
 }
 
 #cards-container h3 {
-    flex: 0 0 auto; /* Evita que el `h3` crezca o se reduzca */
-    margin: 0; /* Elimina márgenes externos */
+    flex: 0 0 auto; 
+    margin: 0; 
     font-size: 3.5rem;
     text-align: center;
-    align-self: center; /* Centra verticalmente el texto */
+    align-self: center; 
 }
 
 #cards-container ul {
     display: flex;
-    flex-direction: row; /* Asegura que los elementos estén en fila */
+    flex-direction: row; 
     list-style-type: none;
-    gap: 2rem; /* Espaciado entre los `li` */
-    margin: 0; /* Elimina márgenes */
-    padding: 0; /* Elimina el padding interno */
+    gap: 2rem; 
+    margin: 0; 
+    padding: 0; 
 }
 
 #cards-container ul li {
     text-align: center;
     flex: 1 1 auto;
     width: 13rem;
-    max-width: 300px;
-    min-width: 200px;
-    height: 100%;
+    max-height: 13rem;
 }
 
 .card {
     background-color: rgba(128,128,128, 0.9);
     padding: 1rem;
     border-radius: 10px;
+    height:100%;
     text-wrap:pretty;
 
 }
 
+.card p {
+    height: 3rem;
+}
 .card h6 {
     font-size: 1rem;
     font-weight: bolder;
