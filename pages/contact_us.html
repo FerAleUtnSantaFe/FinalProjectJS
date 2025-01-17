@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelBloom</title>
-    <link rel="stylesheet" href="../styles/about_us.css">
+    <link rel="stylesheet" href="../styles/contact_us.css">
 </head>
 <body>
     <header>
@@ -17,9 +17,22 @@
 
         </div>
     </header>
-        <!-- <div id="text-content">
-
-        </div> -->
+        <div id="container">
+            <div id="text-content">
+                <h2 id='title'>CONTACT US</h2>
+                <p id='desc'>Get in touch</p>
+            </div>
+            <div id="form-container">
+                <form action="/submit" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                    <button type="submit">Submit</button> </form>
+            </div>
+        </div>
     <div id='sidebar'>
         <a href="https://twitter.com" target='_blank'><img src="../images/twitter.png" alt="Twitter link"></a>
         <a href="https://facebook.com" target='_blank'><img src="../images/facebook.png" alt="facebook link"></a>

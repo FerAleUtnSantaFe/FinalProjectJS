@@ -69,29 +69,34 @@ header{
     display: flex;
     flex-direction: column;
     position: relative;
+    font-weight: bold; 
     left:30%;
-    top:15%;
+    top:10%;
     width: 120rem; /* Cambiar de fijo a un porcentaje */
     max-width: 1300px; /* Limitar el ancho máximo */
     margin: 0 auto; /* Centrar el contenedor */
     padding: 0 2rem; /* Reducir padding para pantallas pequeñas */
     box-sizing: border-box; /* Incluir padding y borde en el ancho total */
+    font-family:'Times New Roman', Times, serif;
 }
 
 
 #info {
     padding: 3rem 3rem 3rem 0;
+    
 }
 
 #info h2 {
     font-size: 5.5rem; /* Ajuste relativo para tamaños dinámicos */
     text-align: left; /* Centrar en pantallas pequeñas */
+
 }
 
 #info p {
     font-size: 1rem;
-    line-height: 1.5; /* Mejorar la lectura */
-    text-align: justify; /* Mantener texto legible */
+    line-height: 1.5;
+
+    text-align: justify; 
 }
 
 .text-container {

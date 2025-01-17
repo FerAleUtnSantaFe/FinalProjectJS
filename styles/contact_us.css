@@ -8,6 +8,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
+    color:white;
 }
 
 header{
@@ -65,11 +66,86 @@ header{
 
 }
 
-#text-content{
-    font-family:'Times New Roman', Times, serif;
-    color: white;
+#container {
     display: flex;
+    flex-direction: row;
+    position: relative;
+    font-weight: bold; 
+    justify-content: space-between;
+    left:30%;
+    top:10%;
+    width: 60rem; /* Cambiar de fijo a un porcentaje */
+    max-width: 1300px; /* Limitar el ancho máximo */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 0 2rem; /* Reducir padding para pantallas pequeñas */
+    box-sizing: border-box; /* Incluir padding y borde en el ancho total */
+    font-family:'Times New Roman', Times, serif;
+    height: 100%;
+    padding: 5rem 0 5rem 0;
+}
+
+#text-content {
     flex-direction: column;
+    max-width:50%;
+    flex-wrap: wrap;
+}
+
+#text-content h2 {
+    font-size: 5.5rem;
+}
+
+#text-content p {
+    font-size: 1.5rem;
+}
+
+#form-container {
+    background-color: rgba(128,128,128, 0.9);
+    height: 25rem;
     justify-content: center;
-    padding: 10rem 0 0 20rem;
+    padding: 2rem 3rem;
+    border-radius: 15px;
+}
+
+
+#form-container form {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    gap: 1rem; /* Espaciado entre los elementos */
+    width: 100%; /* Asegura que el formulario ocupe todo el ancho del contenedor */
+}
+
+#form-container label {
+    font-weight: bold; /* Resalta las etiquetas */
+    margin-bottom: 0.5rem; /* Espacio debajo de cada etiqueta */
+}
+
+#form-container input,
+#form-container textarea {
+    width: 100%; /* Asegura que los campos ocupen el ancho del formulario */
+    padding: 0.5rem; /* Añade espacio interno */
+    border: 1px solid #ccc; /* Borde para los campos */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de texto legible */
+    box-sizing: border-box; /* Asegura que el padding no exceda el ancho total */
+}
+
+#form-container textarea {
+    resize: vertical; /* Permite redimensionar solo verticalmente */
+}
+
+#form-container button {
+    width:100%;
+    padding: 0.75rem; /* Espaciado interno */
+    border: none; /* Elimina bordes por defecto */
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de texto */
+    cursor: pointer; /* Cambia el cursor a "pointer" */
+    transition: background-color 0.3s ease; /* Animación para cambios de color */
+}
+
+#form-container button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
 }
