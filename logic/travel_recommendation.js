@@ -1,4 +1,5 @@
 const searchBtn = document.getElementById("searchBtn");
+const resetBtn = document.getElementById("resetBtn");
 
 function searchCondition() {
     const input = document.getElementById("searchText").value.toLowerCase();
@@ -91,6 +92,15 @@ function searchCondition() {
       });
 }
 
+function clearResults(){
+    const resultDiv = document.getElementById("result");
+    resultDiv.innerHTML = '';
+}
+
 searchBtn.addEventListener("click", () => {
     searchCondition();
 });
+
+resetBtn.addEventListener("click", () => {
+    clearResults();
+})
