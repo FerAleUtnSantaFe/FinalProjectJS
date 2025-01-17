@@ -82,7 +82,10 @@ function searchCondition() {
               resultDiv.appendChild(card);
             }
           } else {
-            resultDiv.innerHTML = 'Place not found.';
+            const card = document.createElement('div');
+            card.className = 'result-card';
+            card.innerHTML = `<h2>Place not found.<h2>`;
+            resultDiv.appendChild(card);
           }
         }
       })
